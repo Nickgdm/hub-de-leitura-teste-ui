@@ -23,5 +23,8 @@
   "dependencies": {
     "@faker-js/faker": "^10.5.0",
     "cypress": "^15.18.1"
+  },
+  "devDependencies": {
+    "wait-on": "^9.1.0"
   }
 }
