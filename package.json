@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx cypressrun --browser chrome",
-    "cy:report": "npx cypress run -- browser chrome --record --key 562bddfe-6786-427a-971e-9ed39c9db1f6"
+    "test": "npx cypress run --browser chrome",
+    "cy:report": "npx cypress run --browser chrome --record --key 562bddfe-6786-427a-971e-9ed39c9db1f6",
+    "wait": "wait-on http://localhost:3000"
   },
   "repository": {
     "type": "git",
