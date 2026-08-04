@@ -1,0 +1,20 @@
+pipeline {
+    agent any
+    tools { nodejs 'nodejs'}
+
+    stages {
+        stage('Clonar o hub de leitura integrado') {
+            steps{
+                bat 'git clone https://github.com/EBAC-QE/hub-de-leitura-integrado2.git'
+            }
+        }
+        stage('Instalar dependências do projeto') {
+            steps{
+                dir('hub-de-leitura-integrado2') {
+                    bat 'npm install'
+                    bat 'npm start'
+                }
+            }
+        }
+    }
+}
