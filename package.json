@@ -25,6 +25,7 @@
     "cypress": "^15.18.1"
   },
   "devDependencies": {
+    "allure-cypress": "^3.10.2",
     "wait-on": "^9.1.0"
   }
 }
